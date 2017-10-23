@@ -1,0 +1,19 @@
+[{
+  "scheme": "https://wos-category.data.istex.fr",
+  "identifier": "identifier[type=\"ISSN\"]",
+  "id": "wos",
+  "table": "wos.json",
+  "label": "Web of Science (WoS) service d’information universitaire en ligne de la société ISI – Institute for Scientific Information de Thomson Scientific."
+}, {
+  "scheme": "https://sciencemetrix-category.data.istex.fr",
+  "identifier": "identifier[type=\"ISSN\"]",
+  "id": "science-metrix",
+  "table": "science-metrix.json",
+  "label": "Science-Metrix, entreprise indépendante basée aux Etats-Unis et au Canada spécialisée en évaluation des activités liées à la science et à la technologie."
+}, {
+  "scheme": "https://scopus-category.data.istex.fr",
+  "identifier": "identifier[type=\"ISSN\"]",
+  "id": "scopus",
+  "table": "scopus.json",
+  "label": "Scopus, base de données transdisciplinaire lancée par l'éditeur scientifique Elsevier."
+}]
