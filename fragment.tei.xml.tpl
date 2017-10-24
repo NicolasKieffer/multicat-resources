@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Fichier générée le {{date}} -->
-<!-- {{module.label}} - v{{pkg.version}} - {{module.resources}} -->
+<!-- {{pkg.name}} - v{{pkg.version}} - {{module.resources}} -->
 <TEI>
   <standOff>
     <teiHeader>
@@ -29,7 +29,7 @@
       </fileDesc>
       <encodingDesc>
         <appInfo>
-          <application ident="{{module.id}}" version="{{module.version}}">
+          <application ident="{{pkg.name}}" version="{{pkg.version}}">
             <label>{{module.label}}</label>
           </application>
         </appInfo>
@@ -42,19 +42,19 @@
         </classDecl>
       </encodingDesc>
       <revisionDesc>
-        <change when="2016-06-24" who="{{module.resp.id}}" xml:id="{{module.id}}">catégorisation par appariement</change>
+        <change when="2016-06-24" who="{{module.resp.id}}" xml:id="{{pkg.name}}">catégorisation par appariement</change>
       </revisionDesc>
     </teiHeader>
-    <listAnnotation type="{{module.id}}">
+    <listAnnotation type="{{pkg.name}}">
       <annotationBlock xmls="https//www.tei-c.org/ns/1.0">
         {{#document.categories}}
-        {{#values}}
-        <keywords change="#{{module.id}}" resp="#{{module.resp.id}}" scheme="#{{id}}">
-          {{#.}}
+          {{#values}}
+        <keywords change="#{{pkg.name}}" resp="#{{module.resp.id}}" scheme="#{{id}}">
+            {{#.}}
           <term level="{{level}}">{{value}}</term>
-          {{/.}}
+            {{/.}}
         </keywords>
-        {{/values}}
+          {{/values}}
         {{/document.categories}}
       </annotationBlock>
     </listAnnotation>
